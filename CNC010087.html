@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CNC010087 percentage table</title>
+    </head>
+    <body style="background-color:lightcoral">
+
+        
+
+
+        <h1 style="text-align: center;padding-bottom: 50px;text-decoration: underline;color:darkred;margin-top: 150px;font-size: 40px;">Percentage Table</h1>
+        <div style="background-color:lightpink;text-align: left;margin-left: 400px; border: red;border-width: 4px;border-style: ridge;padding-bottom: 10px;width: 500px;padding-left: 100px;">
+        <h1 style="margin-top: 50px;"></h1>
+            <h4>Roll No.
+                    <script>
+                        var roll=prompt("enter Roll no");
+                        document.write(roll);
+                     </script></h4>
+        <h4>Name:
+            <script>
+               var name=prompt("Whats your name?");
+               document.write(name+"</br>");
+            </script>
+        </h4>
+        
+        
+        <h4>No of Subjects:
+                <script>
+                   var no_of_sub=parseInt(prompt("How many Subjects?"));
+                   document.write(no_of_sub+"</br>");
+                </script>
+            </h4>
+
+
+
+        
+        <table border="2" style="color: black; width: 1200;height: 450;text-align: center;font-family:Arial, Helvetica, sans-serif;background-color:lightcoral;margin-right: 100px;">
+            <tr style="background-color:#cd5c5c;color: darkred; font-style:bold;font-size: 20px;">
+                <ul>
+                    <td>S.no</td>
+                    <td>Subjects</td>
+                    <td>Total Marks</td>
+                    <td>Obtained Marks</td>
+                    <td>Subject.Perc</td>
+                </ul>
+            </tr>
+
+            
+            <tr>
+                    <ul>
+                        <td>1</td>
+                        <td>English</td>
+                        <td>100</td>
+                        <td>
+                            <script>
+                                var eng=parseInt( prompt("obtained marks in english"));
+                                document.write(eng+"</br>");
+                            </script>
+                        </td>
+                        <td>
+                            <script>
+                                var ep=(eng*100)/100;
+                                document.write(ep);
+                            </script>
+                        </td>
+                    </ul>
+                </tr>
+
+             
+            <tr>
+                    <ul>
+                        <td>2</td>
+                        <td>Urdu</td>
+                        <td>100</td>
+                        <td>
+                                <script>
+                                    var ur=parseInt( prompt("obtained marks in urdu"));
+                                    document.write(ur+"</br>");
+                                </script>
+                            </td>
+                            <td>
+                                <script>
+                                    var urp=(ur*100)/100;
+                                    document.write(urp);
+                                </script>
+                            </td>
+                    </ul>
+                </tr>
+                
+            <tr>
+                    <ul>
+                        <td>3</td>
+                        <td>Maths</td>
+                        <td>100</td>
+                        <td>
+                                <script>
+                                    var ma=parseInt(prompt("obtained marks in maths"));
+                                    document.write(ma+"</br>");
+                                </script>
+                            </td>
+                            <td>
+                                <script>
+                                    var map=(ma*100)/100;
+                                    document.write(map);
+                                </script>
+                            </td>
+                    </ul>
+                </tr>
+
+
+
+
+                
+            <tr>
+                    <ul>
+                        <td>4</td>
+                        <td>Comp</td>
+                        <td>100</td>
+                        <td>
+                                <script>
+                                    var co=parseInt(prompt("obtained marks in Computer"));
+                                    document.write(co+"</br>");
+                                </script>
+                            </td>
+                            <td>
+                                <script>
+                                    var cop=(co*100)/100;
+                                    document.write(cop);
+                                </script>
+                            </td>
+                    </ul>
+                </tr>
+
+
+
+                
+            <tr>
+                    <ul>
+                        <td>5</td>
+                        <td>Isl</td>
+                        <td>100</td>
+                        <td>
+                                <script>
+                                    var is=parseInt(prompt("obtained marks in Isl"));
+                                    document.write(is+"</br>");
+                                </script>
+                            </td>
+                            <td>
+                                <script>
+                                    var isp=(is*100)/100;
+                                    document.write(isp);
+                                </script>
+                            </td>
+                    </ul>
+                </tr>
+
+
+
+        </table>
+
+
+        
+        <h4>Total Obtained Marks:
+                <script>
+                   var total_obt=parseInt(eng + ur + ma + is + co) ;
+                   document.write(total_obt+"</br>");
+                </script>
+            </h4> 
+            
+            <h4>Total Marks:
+                    <script>
+                       var total_marks=parseInt(no_of_sub*100);
+                       document.write(total_marks+"</br>");
+                    </script>
+                </h4>    
+            
+                <h4>Total percentage:
+                        <script>
+                           var percent=parseInt(((total_obt*100)/total_marks));
+                           document.write(percent+"</br>");
+                        </script>
+                    </h4> 
+                    
+                <h1>.....................................................</h1>
+  
+                </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a href="#" onClick="alert('hello')">hello</a> -->
+    <!-- <a href="#" onClick="console.log('hi')">hello</a> -->
+    <!-- <a href="#" onmousemove="alert('hello')">hello</a> -->
+    <!-- <a href="#" onmouseout="alert('hello')">hello</a> -->
+    <!-- <input type="button" value="click" onmouseover="alert('you click it')"> -->
+    <!-- <input type="text" value="" onblur="alert('hello')" onmouseover="this.style.backgroundColor='blue';" onmouseout="this.style.backgroundColor='white';" onfocus="this.style.background='yellow'"> -->
+    <!-- <form onsubmit="myAlert()">
+        email:
+        <input type="text" id="email">
+        <input type="submit" value="submit">
+
+    </form> -->
+
+    <form onsubmit="checkAddress()">
+            email:
+            <input type="text" id="email">
+            <input type="submit" value="submit">
+    
+        </form>
+    
+    
+    <!-- <script src="ex.js">
+    </script> -->
+    <script>
+    function myAlert()
+    {
+        alert("submit")
+    }
+
+    function checkAddress(fieldid){
+
+        var input = document.getElementById('email')
+        console.log(input.value)
+        // if(document.getElementById(fieldid).value==="")
+        // {
+        //     alert("email address required:")
+        // }
+    }
+    </script>
+</body>
+</html>

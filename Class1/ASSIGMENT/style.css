@@ -1,0 +1,30 @@
+body{
+    
+    background-color: whitesmoke;
+    
+}
+
+.h1-color{
+    color: thistle;
+    font-size: 1.7pc;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.h2-color{
+    color: teal;
+    font-size: 1.4pc;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif
+
+}
+
+.h3-color{
+    color:tan;
+    font-size: 1.3pc;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif
+
+}
+
+.p-style
+{
+    color:darkslategray
+}

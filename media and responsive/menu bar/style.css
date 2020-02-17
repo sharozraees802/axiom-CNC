@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* responsive */
+
+ /* .wrapper{
+margin: 0 auto;
+width: 1349px;
+}  */
+.navbar{
+   background-color: gray; 
+   display: flex;
+   justify-content: center;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    /* text-transform:capitalize; */
+    text-transform: uppercase;
+    padding: 14px 28px;
+}
+a:hover{
+    background-color: white;
+    color: black;
+    
+}
+.contain p{
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+#toggle{
+    display: none;
+}
+.togglearea{
+    background-color: gray;
+    border-bottom: 1px solid white;
+    /* color: white; */
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.togglearea label{
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.togglearea label span{
+background-color: black;
+height: 4px;
+width: 60%;
+margin: 3px 0px;
+}
+.togglearea{
+    display: none;
+}
+@media screen and (max-width: 700px ) {
+    .navbar{
+        flex-direction: column;
+        display: none;
+    }
+    #toggle:checked + .navbar{
+        display: flex;
+
+    }
+    .togglearea{
+        display: flex;
+    }
+}

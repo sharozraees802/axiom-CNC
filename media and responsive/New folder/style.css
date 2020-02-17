@@ -1,0 +1,17 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width:1200px){
+body{
+    background-color: tomato;
+}
+h1{
+    color: white;
+}
+}
+.wrapper{
+    /* width: 1000px; */
+    width: 1349;
+    margin: 0 auto;
+}

@@ -1,0 +1,284 @@
+/**
+|--------------------------------------------------
+| TASK 1
+|--------------------------------------------------
+*/
+
+// Write a program that writes the current date in the following format.
+// ====> Tue Dec 03 2019
+
+// function writeDate () { 
+//     console.log(new Date().toDateString())
+// }
+
+// writeDate()
+/**
+|--------------------------------------------------
+| TASK 2
+|--------------------------------------------------
+*/
+
+// Write a program that writes the current date in the following format.
+// ====> Tue Dec 03 2019 14:53:48 GMT+0500 (Pakistan Standard Time)
+
+
+// function writeDate () { 
+//     console.log(new Date().toString())
+// }
+
+// writeDate()
+
+/**
+|--------------------------------------------------
+| TASK 3
+|--------------------------------------------------
+*/
+
+// What will be the output of the following program?
+
+// const date = new Date();
+// console.log("HOUR =======>", date.getHours());
+// console.log("DAY =======>", date.getDay());
+// console.log("MONTH =======>", date.getMonth());
+// console.log("YEAR =======>", date.getFullYear())
+
+/**
+|--------------------------------------------------
+| TASK 4
+|--------------------------------------------------
+*/
+
+// What will be the output of the following program?
+
+// const date = new Date();
+// console.log(new Date(date.setFullYear(2006)).toDateString())
+
+
+/**
+|--------------------------------------------------
+| TASK 5
+|--------------------------------------------------
+*/
+
+// Write a function that takes a name as a parameter and append Mr. at the start of the name on console
+
+// function appendMr(name) {
+//     var prefix = "Mr. "
+//     console.log(prefix + name)
+// }
+
+// appendMr("Umair")
+
+/**
+|--------------------------------------------------
+| TASK 6
+|--------------------------------------------------
+*/
+
+// Invoke the following function and determine the output. 
+
+// function tellTime() {
+//     var now = new Date();
+//     var theHr = now.getHours();
+//     var theMin = now.getMinutes();
+//     console.log("Current time: " + theHr + ":" + theMin)
+// }
+
+// tellTime()
+
+/**
+|--------------------------------------------------
+| TASK 7
+|--------------------------------------------------
+*/
+
+// Point out the incorrect form of writing a function in javascript 
+
+// 1. myfunction() { }
+// 2. function myfunction() { }
+// 3. func myfunction() { }
+// 4. myfunction = () => { }
+
+
+/**
+|--------------------------------------------------
+| TASK 8
+|--------------------------------------------------
+*/
+
+// Write a function that takes an array as a parameter.
+// The function's duty is to delete the last element from the array and return the array
+
+
+// function deleteItem(myArray) {
+//     myArray.pop();
+//     return myArray
+
+// }
+
+// var array = [1, 2, 3, 4, 5]
+// console.log(deleteItem(array))
+/**
+|--------------------------------------------------
+| TASK 9
+|--------------------------------------------------
+*/
+
+// Write a function that takes an argument.
+// The function's duty is to check the arguments type and print the type
+// For example if i pass in a string the function should print string on the console
+// if i pass a number the console should print number
+
+// function checkType(arg){ 
+//     console.log(typeof(arg));
+// }
+
+// checkType("umair")
+// checkType(20);
+// checkType(true)
+
+
+
+
+/**
+|--------------------------------------------------
+| TASK 10
+|--------------------------------------------------
+*/
+// Write a function that takes an array of numbers as a parameter and function's job
+// is to multiply each element of an array by 2 and print it
+
+// function multiplier(newArray) {
+
+//     for (var i = 0; i < newArray.length; i++) {
+//         console.log(newArray[i] * 2)
+//     }
+// }
+
+
+// var myNewArray = [1, 2, 3, 4, 5]
+// multiplier(myNewArray)
+
+/**
+|--------------------------------------------------
+| TASK 11
+|--------------------------------------------------
+*/
+
+// Write a function that does not get any arguments but should return a random id number if called against a variable 
+// Example:
+
+//  var id = generateId();
+//  the generate function should generate a random id between 1 - 1000 and return it 
+
+
+// function generateId() {
+//     return Math.round(Math.random(1000) * 2000)
+// }
+
+// var id = generateId();
+// console.log(id)
+
+/**
+|--------------------------------------------------
+| TASK 12
+|--------------------------------------------------
+*/
+
+// Write a function that takes in a string as an argument an the functions duty is to check the number of characters
+// in a string a print it on the console
+
+// function checkChars(stringToCheck) {
+//     console.log(stringToCheck.length);
+// }
+
+// checkChars("umair")
+// checkChars("Axiom enterprises")
+// checkChars("Bootcamp")
+
+
+/**
+|--------------------------------------------------
+| TASK 13
+|--------------------------------------------------
+*/
+// write an arrow function that takes in a string as an argument and returns the string in uppercase letters.
+
+
+
+// function upperCaseString(stringToCheck) {
+//     return stringToCheck.toUpperCase(); 
+
+// }
+
+// var myString = "axiom"
+// console.log(upperCaseString(myString))
+
+
+/**
+|--------------------------------------------------
+| TASK 14
+|--------------------------------------------------
+*/
+// Write a function to sort an array of numbers in ascending or descending order
+
+// function sorter(myArray){
+//     return myArray.sort().reverse() 
+
+// }
+
+// var myNewArray = [1,5,8,6,8,2,3,5,5,63,9];
+// console.log(sorter(myNewArray))
+
+
+
+/**
+|--------------------------------------------------
+| TASK 15
+|--------------------------------------------------
+*/
+/* Write a function and the functions duty is to first check
+if the argument passed is a string..if it is then you should concatenate behind the sring "Welcome"  and return it
+if the argument passed is a number then it should be multiplied by the power of 2 and return it
+
+ */
+
+// function checkArgAndPerform(arg) {
+//     switch (typeof (arg)) {
+//         case "string":
+//             return "Welcome " + arg
+
+//         case "number":
+//             return Math.pow(arg, 2)
+
+//         default:
+//             return "Invalid argument"
+//     }
+
+// }
+
+// console.log(checkArgAndPerform("umair"))
+// console.log(checkArgAndPerform("Axiom enterprises"))
+// console.log(checkArgAndPerform(5))
+
+/**
+|--------------------------------------------------
+| TASK 16
+|--------------------------------------------------
+*/
+/* Write a function to round a number to a specified number of digits. when passed as an argument and return it
+Example:
+roundNumber(4.6);
+Expected Ouput: 5 ===> The number is rounded off  */
+
+// function roundNumber(number){ 
+//     return Math.round(number)
+
+// }
+// console.log(roundNumber(5.8858))
+// console.log(roundNumber(8.8858))
+// console.log(roundNumber(50.8855528))
+
+
+
+
